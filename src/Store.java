@@ -21,8 +21,8 @@ public class Store {
         } catch (Exception e) {
             System.err.println("Hiba! A fájl nem található!");
             System.err.println(e.getMessage());
-            return null;
         }
+        return new ArrayList<>();
     }
     
     private ArrayList<Termes> tryReadFile() throws FileNotFoundException{
